@@ -1,9 +1,9 @@
-package main
+package practice_2017
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 			ushr = strconv.Itoa(mhr)
 		}
 	}
-	if amPm == "AM" && ushr == "12" && min == "00" && sec == "00"{
+	if amPm == "AM" && ushr == "12" && min == "00" && sec == "00" {
 		ushr = "00"
 	}
 	result := ushr + ":" + parsed[1] + ":" + sec

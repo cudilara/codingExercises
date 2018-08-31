@@ -1,8 +1,8 @@
-package main
+package practice_2017
 
 import "fmt"
 
-func addArr(a []int) int{
+func addArr(a []int) int {
 	sum := 0
 	for i := range a {
 		sum += a[i]

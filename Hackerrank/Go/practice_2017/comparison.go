@@ -1,11 +1,11 @@
-package main
+package practice_2017
 
 import "fmt"
 
-func compArr(a []int, b []int) (int, int){
+func compArr(a []int, b []int) (int, int) {
 	Ascore, Bscore := 0, 0
 	for i := 0; i < 3; i++ {
-		if a[i] > b[i]{
+		if a[i] > b[i] {
 			Ascore += 1
 		} else if a[i] < b[i] {
 			Bscore += 1

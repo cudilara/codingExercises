@@ -1,4 +1,4 @@
-package main
+package practice_2017
 
 import (
 	"fmt"
@@ -24,7 +24,7 @@ func inputValues() ([]int, []int) {
 
 func checkA(n int, set []int) bool {
 	for i := range set {
-		if n % set[i] != 0 {
+		if n%set[i] != 0 {
 			return false
 		}
 	}
@@ -34,7 +34,7 @@ func checkA(n int, set []int) bool {
 func checkB(n int, set []int) bool {
 	for i := range set {
 		if n != 0 {
-			if set[i] % n != 0 {
+			if set[i]%n != 0 {
 				return false
 			}
 		}
@@ -43,12 +43,12 @@ func checkB(n int, set []int) bool {
 }
 
 func checkLastAValue(aset []int, bset []int) bool {
-	return checkA(aset[len(aset) - 1], aset) && checkB(aset[len(aset) - 1], bset)
+	return checkA(aset[len(aset)-1], aset) && checkB(aset[len(aset)-1], bset)
 }
 
 func getValsBetweenSets(aset []int, bset []int) int {
 	rNum := 0
-	for n := aset[len(aset) - 1] + 1; n < bset[0]; n++ {
+	for n := aset[len(aset)-1] + 1; n < bset[0]; n++ {
 		if checkA(n, aset) && checkB(n, bset) {
 			rNum += 1
 		}

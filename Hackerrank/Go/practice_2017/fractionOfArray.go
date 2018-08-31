@@ -1,15 +1,15 @@
-package main
+package practice_2017
 
 import "fmt"
 
-func getFractions(a []int, N int) (float64, float64, float64){
+func getFractions(a []int, N int) (float64, float64, float64) {
 	positive := 0
 	negative := 0
 	zero := 0
 	for i := range a {
-		if a[i] < 0{
+		if a[i] < 0 {
 			negative += 1
-		} else if a[i] > 0{
+		} else if a[i] > 0 {
 			positive += 1
 		} else {
 			zero += 1
@@ -32,4 +32,3 @@ func main() {
 	d, b, c := getFractions(a, N)
 	fmt.Printf("%.6f\n%.6f\n%.6f", d, b, c)
 }
-

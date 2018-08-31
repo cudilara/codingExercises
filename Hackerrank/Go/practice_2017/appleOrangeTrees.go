@@ -1,4 +1,4 @@
-package main
+package practice_2017
 
 import (
 	"fmt"
@@ -32,7 +32,7 @@ func getValues() ([]int, []int, []int, []int) {
 	return house, trees, appleDist, orangeDist
 }
 
-func getFruitPosition(trees []int, appleDist []int, orangeDist []int) ([]int, []int){
+func getFruitPosition(trees []int, appleDist []int, orangeDist []int) ([]int, []int) {
 	var applePos []int
 	var orangePos []int
 	var pos int
@@ -47,7 +47,7 @@ func getFruitPosition(trees []int, appleDist []int, orangeDist []int) ([]int, []
 	return applePos, orangePos
 }
 
-func countHouseFruit(house []int, applePos []int, orangePos []int) (int, int){
+func countHouseFruit(house []int, applePos []int, orangePos []int) (int, int) {
 	var appleN int
 	var orangeN int
 	for i := range applePos {
@@ -59,7 +59,7 @@ func countHouseFruit(house []int, applePos []int, orangePos []int) (int, int){
 	}
 	for k := range orangePos {
 		if orangePos[k] >= house[0] {
-			if orangePos[k] <= house[1]{
+			if orangePos[k] <= house[1] {
 				orangeN += 1
 			}
 		}

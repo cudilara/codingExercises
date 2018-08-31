@@ -1,4 +1,4 @@
-package main
+package practice_2017
 
 import "fmt"
 

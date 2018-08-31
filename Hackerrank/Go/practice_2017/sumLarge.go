@@ -1,8 +1,8 @@
-package main
+package practice_2017
 
 import "fmt"
 
-func addLargeArr(a []int64) int64{
+func addLargeArr(a []int64) int64 {
 	var sum int64 = 0
 	for i := range a {
 		sum += a[i]

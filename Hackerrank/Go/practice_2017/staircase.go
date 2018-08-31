@@ -1,4 +1,4 @@
-package main
+package practice_2017
 
 import (
 	"fmt"
@@ -13,10 +13,9 @@ func main() {
 	var N int
 	fmt.Scanln(&N)
 	for i := 0; i <= N; i++ {
-		printSpace = strings.Repeat(space, N - i)
+		printSpace = strings.Repeat(space, N-i)
 		fmt.Print(printSpace)
 		printSymbol = strings.Repeat(symbol, i)
 		fmt.Println(printSymbol)
 	}
 }
-

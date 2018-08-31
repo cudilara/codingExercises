@@ -1,4 +1,4 @@
-package main
+package practice_2017
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func calcGrade(a []int) []int {
 	var grade int
 	var nextMultiple int
 	for i := range a {
-		if a[i] > 37{
+		if a[i] > 37 {
 			divider = a[i] / 5
 			nextMultiple = (divider + 1) * 5
 			leftover = nextMultiple - a[i]
